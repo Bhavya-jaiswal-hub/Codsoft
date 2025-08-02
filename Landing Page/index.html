@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AD Cafe</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #1c1c1c;
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: #111;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #d5a16d;
+    }
+
+    nav a {
+      margin: 0 1rem;
+      color: #fff;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #d5a16d;
+    }
+
+    .cta-buttons {
+      display: flex;
+      gap: 1rem;
+    }
+
+    .btn {
+      padding: 0.6rem 1.2rem;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: 600;
+    }
+
+    .btn-explore {
+      background-color: #d5a16d;
+      color: #000;
+    }
+
+    .btn-order {
+      background-color: transparent;
+      border: 1px solid #fff;
+      color: #fff;
+    }
+
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      padding: 4rem 2rem;
+      justify-content: space-between;
+    }
+
+    .hero-text {
+      flex: 1;
+      min-width: 300px;
+      padding-right: 2rem;
+    }
+
+    .hero-text h1 {
+      font-size: 3rem;
+      color: #fff;
+    }
+
+    .hero-text h1 span {
+      color: #d5a16d;
+    }
+
+    .hero-text p {
+      margin: 1rem 0 2rem;
+      color: #ccc;
+    }
+
+    .hero-image {
+      flex: 1;
+      min-width: 300px;
+      text-align: center;
+    }
+
+    .hero-image img {
+      width: 250px;
+      max-width: 100%;
+      border-radius: 10px;
+    }
+
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      justify-content: center;
+      padding: 2rem;
+    }
+
+    .product-card {
+      background-color: #2a2a2a;
+      border-radius: 8px;
+      overflow: hidden;
+      width: 250px;
+      transition: transform 0.3s;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .product-card .info {
+      padding: 1rem;
+    }
+
+    .product-card .info h3 {
+      color: #fff;
+    }
+
+    .product-card .info p {
+      font-size: 0.9rem;
+      color: #aaa;
+      margin: 0.5rem 0;
+    }
+
+    .product-card .info .rating {
+      color: #f5c518;
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .hero-text {
+        padding-right: 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="logo">AD Cafe</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Our Product</a>
+      <a href="#">Category</a>
+      <a href="#">Contact Us</a>
+    </nav>
+    <div class="cta-buttons">
+      <button class="btn btn-explore">Register</button>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Enjoy The Most <span>Delicious Coffee</span></h1>
+      <p>Start your day with coffee, enhancing productivity and mood. Its invigorating aroma sets a focused tone for tackling tasks with renewed energy and positivity.</p>
+      <div class="cta-buttons">
+        <button class="btn btn-explore">Explore →</button>
+        <button class="btn btn-order">Order Coffee ☕</button>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="https://img.freepik.com/premium-photo/beautiful-coffee-cup-dark-background_1101578-27.jpg?w=2000" alt="Coffee Cup">
+    </div>
+  </section>
+
+  <section class="products">
+    <div class="product-card">
+      <img src="https://coffeforus.com/wp-content/uploads/2022/12/Americano-coffee-recipe.jpg" alt="Americano">
+      <div class="info">
+        <h3>Americano</h3>
+        <p>A coffee drink typically made from equal parts espresso...</p>
+        <div class="rating">⭐ 4.9</div>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="https://images.unsplash.com/photo-1525351484163-7529414344d8" alt="Black Coffee">
+      <div class="info">
+        <h3>Black Coffee</h3>
+        <p>Black coffee is a hot coffee beverage simply made...</p>
+        <div class="rating">⭐ 4.9</div>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="https://media.istockphoto.com/id/1177900338/photo/cup-of-espresso-with-coffee-beans.jpg?s=1024x1024&w=is&k=20&c=1jLidxF4w4BldSvzxd1EhKiqzqSE-V1OgMVRZYMWJlA=" alt="Mocha">
+      <div class="info">
+        <h3>Mocha</h3>
+        <p>A coffee drink known for its chocolate sweet, rich...</p>
+        <div class="rating">⭐ 4.9</div>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="https://suddencoffee.com/wp-content/uploads/2024/05/breve-coffee.jpg" alt="Breve">
+      <div class="info">
+        <h3>Breve</h3>
+        <p>Breve is a coffee drink made with equal parts espresso...</p>
+        <div class="rating">⭐ 4.9</div>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>

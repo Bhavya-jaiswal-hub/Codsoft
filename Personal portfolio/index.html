@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #0d6efd;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+    }
+
+    section {
+      padding: 3rem 1rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    #about img {
+      max-width: 150px;
+      border-radius: 50%;
+      display: block;
+      margin: 1rem auto;
+    }
+
+    h2 {
+      text-align: center;
+      color: #0d6efd;
+      margin-bottom: 2rem;
+    }
+
+    .skills, .projects {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      justify-content: center;
+    }
+
+    .skill-item, .project-item {
+      background: white;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      flex: 1 1 250px;
+    }
+
+    .project-item img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+    }
+
+    #resume a {
+      display: inline-block;
+      background: #0d6efd;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border-radius: 5px;
+      text-decoration: none;
+      text-align: center;
+    }
+
+    #contact p {
+      text-align: center;
+      font-size: 1.1rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #333;
+      color: white;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      section {
+        padding: 2rem 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Bhavya Jaiswal</h1>
+    <p>Aspiring Web Developer | Frontend & Backend Enthusiast</p>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <img src="git hub profile.jpg" alt="My Photo">
+    <p style="text-align:center; max-width: 700px; margin: auto;">
+      Hello! I'm Bhavya, a passionate web developer with experience in HTML, CSS, JavaScript, React, Node.js, and more. I love creating beautiful and functional websites.
+    </p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="skill-item">HTML5 & CSS3</div>
+      <div class="skill-item">JavaScript (ES6+)</div>
+      <div class="skill-item">React.js</div>
+      <div class="skill-item">Node.js</div>
+      <div class="skill-item">Express & MongoDB</div>
+      <div class="skill-item">Firebase & Redux</div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="project-item">
+        <img src="Screenshot 2025-08-02 134902.png" alt="Project 1">
+        <h3>Symptom Checker App</h3>
+        <p>A health application that predicts diseases based on symptoms and finds nearby hospitals.</p>
+      </div>
+      <div class="project-item">
+        <img src="Screenshot 2025-08-02 135756.png" alt="Project 2">
+        <h3>Delivery King</h3>
+        <p>A logistics web app with driver tracking, booking, and fare estimation features.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="resume">
+    <h2>Resume</h2>
+    <div style="text-align: center;">
+      <a href="Bhavya resume.pdf" download>Download My Resume (PDF)</a>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: bhavyajaiswal71@gmail.com | Phone: +91-6395687548</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Bhavya Jaiswal. All rights reserved.</p>
+  </footer>
+</body>
+</html>
